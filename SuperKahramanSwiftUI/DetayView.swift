@@ -18,7 +18,7 @@ let selectedKahraman: Kahraman
                 Marker(selectedKahraman.isim, coordinate: selectedKahraman.lokasyon)
                 
             }.frame(height: 250)
-            ImageView(image: Image(selectedKahraman.ImageName)).offset(CGSize(width: 0.0, height: -50))
+            ImageView(image: Image(selectedKahraman.ImageName)).offset(CGSize(width: 0.0, height: UIScreen.main.bounds.width * -0.2))
             VStack(content: {
                 HStack(content: {
                     Text(selectedKahraman.isim).font(.largeTitle).foregroundStyle(.blue)
